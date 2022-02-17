@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+
 body{
     text-align: center;
     background-color: #000;
@@ -5,4 +8,39 @@ body{
     margin: 0;
  
   }
-  
+
+
+.text-formatob{
+    font-family: Lato;
+    font-weight: 300;
+}
+
+.text-formatoA{
+    font-family: Lato;
+    font-weight: 400;
+}
+
+
+.tam-ico{
+    height: 30px;
+    width: 30px;
+    border-radius: 10%;
+}
+
+.linea-central{
+    color: #17a2b8;
+
+
+}
+
+.bg-tranparente{
+    background-color: transparent;
+}
+
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 3px solid #17a2b8;
+  }
