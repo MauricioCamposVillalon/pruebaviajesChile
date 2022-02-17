@@ -37,6 +37,10 @@ body{
     background-color: transparent;
 }
 
+.bg-verde{
+    background-color: #17a2b8;
+    
+}
 
 hr {
     margin-top: 1rem;
