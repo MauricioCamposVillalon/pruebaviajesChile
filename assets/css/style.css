@@ -48,3 +48,7 @@ hr {
     border: 0;
     border-top: 3px solid #17a2b8;
   }
+
+  .altura-container { 
+    min-height: 100vh; 
+   }
