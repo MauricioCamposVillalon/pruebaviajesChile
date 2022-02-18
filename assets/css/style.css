@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap'); /* carga de fuente */
 
 
 body{
@@ -8,6 +8,7 @@ body{
     margin: 0;
   }
 
+  /* fuentes de letra */
 .text-formatob{
     font-family: Lato;
     font-weight: 300;
@@ -19,11 +20,11 @@ body{
 }
 
 .text-tamA{
-    font-size: x-large;
+    font-size: x-large; /* tamaño de letra grande */
 }
 
 .text-tamB{
-    font-size:larger;
+    font-size:larger; /* tamaño de letra largo */
 }
 
 .tam-ico{
@@ -52,7 +53,7 @@ hr {
   }
 
 .altura-container { 
-    min-height: 100vh; 
+    min-height: 100vh;  /* altura de los section */
   }
 
   /* inicio de tamaño de imagenes dentro de las tarjetas */
