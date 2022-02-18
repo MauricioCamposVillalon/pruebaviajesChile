@@ -24,10 +24,10 @@
 <body>
 
     <header>
-        <div class="container">
+        <div class="container" id="inicio">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top mx-5">
                 <img class="tam-ico" src="assets/img/viajes.svg" alt="Viajes">
-                <label class="navbar-brand text-formatoA text-white">&nbsp;Viajes Chile</label>
+                <label class="navbar-brand text-formatoA text-tamA text-white">&nbsp;Viajes Chile</label>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -37,17 +37,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto ">
                         <li class="nav-item active ">
-                            <a class="nav-link  text-formatob text-white" href="#">Inicio</a>
+                            <a class="nav-link  text-formatoA text-white text-tamB" href="#inicio" data-toggle="tooltip"
+                            data-placement="bottom" title="Lleva al Inicio">Inicio</a>                         
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-formatob text-white" href="#">Quienes somos</a>
+                            <a class="nav-link text-formatoA text-white text-tamB" href="#qsomos" data-toggle="tooltip"
+                            data-placement="bottom" title="Conocenos">Quienes somos</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link text-formatob text-white" href="#">Destacados</a>
+                            <a class="nav-link text-formatoA text-white text-tamB" href="#destacado" data-toggle="tooltip"
+                            data-placement="bottom" title="Importante">Destacados</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-formatob text-white" href="#">Contacto</a>
+                            <a class="nav-link text-formatoA text-white text-tamB" href="#contacto" data-toggle="tooltip"
+                            data-placement="bottom" title="Llamanos">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -79,15 +83,16 @@
 
     <!-- Inicio Seccíon Quienes Somos-->
     <section id="qsomos">
-        <div class="container col-11 mt-5 ">
+        <div class="container col-11 mt-5 pt-5 d-none d-sm-block">
             <h3 class="text-center text-formatoA">¿Quienes Somos?</h3>
             <hr class="linea-central mx-3 mb-3 mt-4">
-            <div class="row mx-2 mt-5">
-                <div class="col-12 col-md-4">
+            <div class="row mx-2 mt-5 "> <!-- Row que permite mantener ordenados y alineados los 3 parrafos-->
+                <!-- Comienzo de parrafo 1 por medio de un div y un favicons-->
+                <div class="col-12 col-md-4 d-none d-sm-block">
                     <div class="bg-verde p-1">
                         <i class="fa-solid fa-plane  fa-2x"></i>
                     </div>
-                    <p class="text-justify mt-3 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                    <p class="text-justify mt-3 mt-2 text-formatob">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
                         doloribus
                         necessitatibus quod! Laborum eaque consequuntur deserunt perspiciatis minima vel nobis
                         cupiditate eius quis, iusto commodi. Voluptates quo omnis vero quos?
@@ -104,8 +109,9 @@
                         accusantium itaque esse nostrum totam culpa perspiciatis commodi minus quaerat ullam nobis modi
                         cum assumenda ducimus. Autem veritatis repellat odit.</p>
                 </div>
-                <div class="col-12 col-md-4 mt-2">
-                    <p class="text-justify ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia
+                <!-- Comienzo de parrafo 2 por medio de un div y un favicons-->
+                <div class="col-12 col-md-4 mt-2 d-none d-sm-block">
+                    <p class="text-justify text-formatob">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia
                         perspiciatis qui odio cumque veniam commodi doloremque quasi beatae fuga totam quos ad enim, non
                         vitae laboriosam molestiae quae labore.
                         Iste quasi nemo quos fugit repudiandae id magnam deleniti sequi voluptatibus nihil alias ullam
@@ -124,11 +130,12 @@
                         <i class="fa-solid fa-mountain fa-2x"></i>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mt-2">
+                <!-- Comienzo de parrafo 3 por medio de un div y un favicons-->
+                <div class="col-12 col-md-4 mt-2 d-none d-sm-block">
                     <div class="bg-verde p-1">
                         <i class="fa-solid fa-route fa-2x"></i>
                     </div>
-                    <p class="text-justify mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                    <p class="text-justify mt-3 text-formatob">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
                         fugit iste sequi dicta facere velit suscipit veniam iure beatae quis tenetur ducimus ipsum
                         totam, non qui aperiam optio cum? Maiores.
                         Minus voluptas sunt animi odit in, dolores soluta corporis facere deserunt! Deleniti suscipit
@@ -152,13 +159,13 @@
     <!--Inicio Seccion destacados  -->
     <section id="destacado">
         <!-- Comienzo de las tarjetas dentro de la pagina-->
-        <div class="container col-11 mt-5 ">
+        <div class="container col-11 mt-5 pt-5 ">
             <h3 class="text-center text-formatoA">Destacados</h3>
             <hr class="linea-central mx-3 mb-3 mt-4">
 
             <div class="card-deck mt-5">
                 <!-- Primera tarjeta-->
-                <div class="card text-white bg-info mb-2 p-1">
+                <div class="card text-white bg-info mb-2 p-1 "> <!-- Carga de targetas  se agrega el color de fondo y del texto-->
                     <img src="assets/img/card1.jpg" class="card-img-top " alt="tarjeta 1">
                     <div class="card-body">
                         <h4 class="card-title text-left text-formatoA">Lorem ipsum dolor sit amet</h4>
@@ -169,7 +176,7 @@
                     </div>
                 </div>
                 <!-- Segunda Tarjeta-->
-                <div class="card  text-white bg-info mb-2 p-1">
+                <div class="card  text-white bg-info mb-2 p-1 col-lg-6">
                     <img src="assets/img/card2.jpg" class="card-img-top" alt="tarjeta2">
                     <div class="card-body">
                         <h4 class="card-title text-left text-formatoA">Consectetur adipisicing </h4>
@@ -208,12 +215,13 @@
 
     <!--Inicio Seccion Contacto  -->
     <section id="contacto">
-        <div class="container col-11 m-5 ">
+        <div class="container col-11 mt-5 pt-5">
             <h3 class="text-center text-formatoA">Contacto</h3>
             <hr class="linea-central mx-3 mb-3 mt-5">
             <div class="px-5">
                 <div class="typeform-widget mt-5" data-url="https://form.typeform.com/to/vPsGLvoF?typeform-medium=embed-sn
 ippet" style="width: 100%; height: 500px;">
+                <!-- Typeform cargado el script se encuentre en script.js en la carpeta JS del proyecto, se puede ver la efectividad en navegador mozilla-->
                 </div>
             </div>
         </div>
@@ -223,8 +231,19 @@ ippet" style="width: 100%; height: 500px;">
     <!--Fin Seccion Contacto-->
 
     <!--Inicio footer-->
-    <footer class="mt-5">
-
+    <footer class="bg-verde mt-5 ">
+        <div class="row">
+            <div class="col-12 col-md-6 text-center p-2">
+                <p class="text-white text-formatoA text-tamA">VIAJES CHILE</p> 
+            </div>
+            <div class="col-12 col-md-6 text-center p-2">
+                <i class="fa-brands fa-github fa-2x" ></i>
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+                <i class="fa-brands fa-twitter-square fa-2x"></i>
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </div>
+        </div>
+       
     </footer>
 
 
